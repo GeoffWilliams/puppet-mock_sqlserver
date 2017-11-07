@@ -1,0 +1,21 @@
+{
+  "name": "geoffwilliams-sqlserver",
+  "version": "2.0.0",
+  "author": "Geoff Williams",
+  "summary": "Mock version of puppetlabs-sqlserver to allow testing",
+  "license": "Apache 2.0",
+  "source": "https://tickets.puppet.com/browse/MODULES/component/12400",
+  "project_page": "https://github.com/GeoffWilliams/puppet-mock_sqlserver",
+  "issues_url": "https://github.com/GeoffWilliams/puppet-mock_sqlserver/issues",
+  "tags": [
+  ],
+  "requirements": [
+    {
+      "name": "puppet",
+      "version_requirement": ">=4.7.0 < 6.0.0"
+    }
+  ],
+  "dependencies": [
+    { "name":"puppetlabs/stdlib","version_requirement":">= 4.13.1 < 5.0.0" }
+  ]
+}

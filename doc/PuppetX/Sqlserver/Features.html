@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Class: PuppetX::Sqlserver::Features
+  
+    &mdash; Documentation by YARD 0.9.9
+  
+</title>
+
+  <link rel="stylesheet" href="../../css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="../../css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  pathId = "PuppetX::Sqlserver::Features";
+  relpath = '../../';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="../../class_list.html?1"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="../../_index.html">Index (F)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../../PuppetX.html" title="PuppetX (module)">PuppetX</a></span></span> &raquo; <span class='title'><span class='object_link'><a href="../Sqlserver.html" title="PuppetX::Sqlserver (module)">Sqlserver</a></span></span>
+     &raquo; 
+    <span class="title">Features</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="puppet_defined_type_list_link"
+        href="../../puppet_defined_type_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <div id="content"><h1>Class: PuppetX::Sqlserver::Features
+  
+  
+  
+</h1>
+<div class="box_info">
+  
+  <dl>
+    <dt>Inherits:</dt>
+    <dd>
+      <span class="inheritName">Object</span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next">PuppetX::Sqlserver::Features</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+    </dd>
+  </dl>
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+  <dl>
+    <dt>Defined in:</dt>
+    <dd>lib/puppet_x/sqlserver/features.rb</dd>
+  </dl>
+  
+</div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p><a
+href="https://msdn.microsoft.com/en-us/library/ms143786.aspx">msdn.microsoft.com/en-us/library/ms143786.aspx</a>
+basic feature docs</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+
+
+
+
+
+
+  
+    <h2>
+      Class Method Summary
+      <small><a href="#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_features-class_method" title="get_features (class method)">.<strong>get_features</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>return a hash of version =&gt; shared features array.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_instance_info-class_method" title="get_instance_info (class method)">.<strong>get_instance_info</strong>(version, instance_name)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>returns a hash containing instance details.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_instances-class_method" title="get_instances (class method)">.<strong>get_instances</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>return a hash of version =&gt; instance info.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+
+  <div id="class_method_details" class="method_details_list">
+    <h2>Class Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="get_features-class_method">
+  
+    .<strong>get_features</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>return a hash of version =&gt; shared features array</p>
+
+<p>{  “SQL_2012” =&gt; [“Conn”, “SDK”, “MDS”, “BC”, “SSMS”, “ADV_SSMS”, “IS”],
+“SQL_2014” =&gt; [] }</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+247
+248
+249
+250
+251</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/puppet_x/sqlserver/features.rb', line 247</span>
+
+<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_get_features'>get_features</span>
+  <span class='id identifier rubyid_features'>features</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
+  <span class='const'>ALL_SQL_VERSIONS</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_version'>version</span><span class='op'>|</span> <span class='id identifier rubyid_features'>features</span><span class='lbracket'>[</span><span class='id identifier rubyid_version'>version</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_get_shared_features'>get_shared_features</span><span class='lparen'>(</span><span class='id identifier rubyid_version'>version</span><span class='rparen'>)</span> <span class='rbrace'>}</span>
+  <span class='id identifier rubyid_features'>features</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_instance_info-class_method">
+  
+    .<strong>get_instance_info</strong>(version, instance_name)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>returns a hash containing instance details</p>
+
+<p>{  “name” =&gt; “MSSQLSERVER2”,  “version_friendly” =&gt; “SQL_2014”, 
+“version” =&gt; “12.0.2000.8”,  “reg_root” =&gt;
+“SoftwareMicrosoftMicrosoft SQL ServerMSSQL12.MSSQLSERVER2”,  “features”
+=&gt;[ “Replication”, “SQLEngine”, “FullText”, “DQ”, “AS”, “RS” ] }</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+269
+270
+271
+272
+273
+274
+275
+276
+277
+278</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/puppet_x/sqlserver/features.rb', line 269</span>
+
+<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_get_instance_info'>get_instance_info</span><span class='lparen'>(</span><span class='id identifier rubyid_version'>version</span><span class='comma'>,</span> <span class='id identifier rubyid_instance_name'>instance_name</span><span class='rparen'>)</span>
+  <span class='kw'>return</span> <span class='kw'>nil</span> <span class='kw'>if</span> <span class='id identifier rubyid_version'>version</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+  <span class='id identifier rubyid_sql_instance'>sql_instance</span> <span class='op'>=</span> <span class='id identifier rubyid_get_wmi_instance_info'>get_wmi_instance_info</span><span class='lparen'>(</span><span class='id identifier rubyid_version'>version</span><span class='comma'>,</span> <span class='id identifier rubyid_instance_name'>instance_name</span><span class='rparen'>)</span>
+  <span class='comment'># Instance names are unique on a single host, but not for a particular SQL Server version therefore
+</span>  <span class='comment'># it&#39;s possible to request information for a valid instance_name but not for version.  In this case
+</span>  <span class='comment'># we just return nil.
+</span>  <span class='kw'>return</span> <span class='kw'>nil</span> <span class='kw'>if</span> <span class='id identifier rubyid_sql_instance'>sql_instance</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>reg_root</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+  <span class='id identifier rubyid_feats'>feats</span> <span class='op'>=</span> <span class='id identifier rubyid_get_instance_features'>get_instance_features</span><span class='lparen'>(</span><span class='id identifier rubyid_sql_instance'>sql_instance</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>reg_root</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span><span class='comma'>,</span> <span class='id identifier rubyid_sql_instance'>sql_instance</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>name</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_sql_instance'>sql_instance</span><span class='period'>.</span><span class='id identifier rubyid_merge'>merge</span><span class='lparen'>(</span><span class='lbrace'>{</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>features</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_feats'>feats</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_instances-class_method">
+  
+    .<strong>get_instances</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>return a hash of version =&gt; instance info</p>
+
+<p>{  “SQL_2012” =&gt; {},  “SQL_2014” =&gt; {  “MSSQLSERVER” =&gt; {  “name”
+=&gt; “MSSQLSERVER”,  “version_friendly” =&gt; “SQL_2014”,  “version” =&gt;
+“12.0.2000.8”,  “reg_root” =&gt; “SoftwareMicrosoftMicrosoft SQL
+ServerMSSQL12.MSSQLSERVER”,  “features” =&gt; [ “Replication”, “SQLEngine”,
+“FullText”, “DQ”, “AS”, “RS” ]  }  } }</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+213
+214
+215
+216
+217
+218
+219
+220
+221
+222
+223
+224
+225
+226
+227
+228
+229
+230
+231
+232
+233
+234
+235
+236
+237
+238
+239</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/puppet_x/sqlserver/features.rb', line 213</span>
+
+<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_get_instances'>get_instances</span>
+  <span class='id identifier rubyid_version_instance_map'>version_instance_map</span> <span class='op'>=</span> <span class='const'>ALL_SQL_VERSIONS</span>
+    <span class='period'>.</span><span class='id identifier rubyid_map'>map</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_version'>version</span><span class='op'>|</span>
+      <span class='id identifier rubyid_major_version'>major_version</span> <span class='op'>=</span> <span class='const'>SQL_CONFIGURATION</span><span class='lbracket'>[</span><span class='id identifier rubyid_version'>version</span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='symbol'>:major_version</span><span class='rbracket'>]</span>
+
+      <span class='id identifier rubyid_instances'>instances</span> <span class='op'>=</span> <span class='id identifier rubyid_get_instance_names_by_ver'>get_instance_names_by_ver</span><span class='lparen'>(</span><span class='id identifier rubyid_version'>version</span><span class='rparen'>)</span>
+        <span class='period'>.</span><span class='id identifier rubyid_map'>map</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_name'>name</span><span class='op'>|</span> <span class='lbracket'>[</span> <span class='id identifier rubyid_name'>name</span><span class='comma'>,</span> <span class='id identifier rubyid_get_instance_info'>get_instance_info</span><span class='lparen'>(</span><span class='id identifier rubyid_version'>version</span><span class='comma'>,</span> <span class='id identifier rubyid_name'>name</span><span class='rparen'>)</span> <span class='rbracket'>]</span> <span class='rbrace'>}</span>
+
+      <span class='comment'># Instance names are unique on a single host, but not for a particular SQL Server version therefore
+</span>      <span class='comment'># it&#39;s possible to request information for a valid instance_name but not for version.  In this case
+</span>      <span class='comment'># we just reject any instances that have no information
+</span>      <span class='id identifier rubyid_instances'>instances</span><span class='period'>.</span><span class='id identifier rubyid_reject!'>reject!</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_value'>value</span><span class='op'>|</span> <span class='id identifier rubyid_value'>value</span><span class='lbracket'>[</span><span class='int'>1</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span> <span class='rbrace'>}</span>
+
+      <span class='comment'># Unfortunately later SQL versions can return previous version SQL instances.  We can weed these out
+</span>      <span class='comment'># by inspecting the major version of the instance_version
+</span>      <span class='id identifier rubyid_instances'>instances</span><span class='period'>.</span><span class='id identifier rubyid_reject!'>reject!</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_value'>value</span><span class='op'>|</span>
+        <span class='kw'>return</span> <span class='kw'>true</span> <span class='kw'>if</span> <span class='id identifier rubyid_value'>value</span><span class='lbracket'>[</span><span class='int'>1</span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>version</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+        <span class='id identifier rubyid_ver'>ver</span> <span class='op'>=</span> <span class='const'>Gem</span><span class='op'>::</span><span class='const'>Version</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='id identifier rubyid_value'>value</span><span class='lbracket'>[</span><span class='int'>1</span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>version</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span><span class='rparen'>)</span>
+        <span class='comment'># Segment 0 is the major version number of the SQL Instance
+</span>        <span class='id identifier rubyid_ver'>ver</span><span class='period'>.</span><span class='id identifier rubyid_segments'>segments</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span> <span class='op'>!=</span> <span class='id identifier rubyid_major_version'>major_version</span>
+      <span class='kw'>end</span>
+
+      <span class='lbracket'>[</span> <span class='id identifier rubyid_version'>version</span><span class='comma'>,</span> <span class='const'>Hash</span><span class='lbracket'>[</span><span class='id identifier rubyid_instances'>instances</span><span class='rbracket'>]</span> <span class='rbracket'>]</span>
+    <span class='kw'>end</span>
+
+  <span class='const'>Hash</span><span class='lbracket'>[</span><span class='id identifier rubyid_version_instance_map'>version_instance_map</span><span class='rbracket'>]</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+      <div id="footer">
+     Generated by <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>.
+</div>
+
+    </div>
+  </body>
+</html>
